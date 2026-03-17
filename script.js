@@ -48,3 +48,17 @@ document.getElementById("name").value = "";
 document.getElementById("email").value = "";
 
 }
+function deleteStudent(id){
+
+let rows = document.getElementById("studentTable").rows;
+
+for(let i = 0; i < rows.length; i++){
+
+if(rows[i].cells[0].innerText == id){
+rows[i].remove();
+break;
+}
+
+}
+
+}
