@@ -12,6 +12,7 @@ let row = `<tr>
 <td>${student.id}</td>
 <td>${student.name}</td>
 <td>${student.email}</td>
+<td><button class="btn btn-danger btn-sm" onclick="deleteStudent(${student.id})">Delete</button></td>
 </tr>`;
 
 table.innerHTML += row;
